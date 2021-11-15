@@ -1,0 +1,12 @@
+/* Variables */
+@import 'colors';
+$simple-kitchen: 'Sacramento', cursive;
+$main-font: Arial, Helvetica, Sans-Serif;
+
+/* Nest Main */
+main {
+    width: 1350px;
+    min-height:535px;
+}
+
+// Mixin or Extend for button
