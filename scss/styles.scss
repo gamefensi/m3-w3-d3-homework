@@ -1,12 +1,72 @@
 /* Variables */
 @import 'colors';
+@import 'nav';
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 $simple-kitchen: 'Sacramento', cursive;
 $main-font: Arial, Helvetica, Sans-Serif;
 
-/* Nest Main */
-main {
-    width: 1350px;
-    min-height:535px;
+// Mixin or Extend for button
+%height {
+    height: 535px;
+}
+@mixin transform($property) {
+    -moz-transform: $property;
+    -webkit-transform: $property;
+    -o-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
 }
 
-// Mixin or Extend for button
+
+/* Nest Main */
+body {
+    background-color: $outer-color;
+    font-family: $main-font;
+    color: $text-color;
+    main {
+        @extend %height;
+        width: 1350px;
+        background-color: $inner-color;
+        padding: 20px;
+        margin: 10px;
+        border: $outer-color solid 10px;
+        #intro-text {
+            text-align: center;
+            float: left;
+            background-color: $left-color;
+            width: 40%;
+            padding: 10% 20px 116px 20px;
+            font-weight: bold;
+            // @extend %height;
+            span {
+                font-family: $simple-kitchen;
+                font-size: 24pt;
+            }
+            h3 {
+                font-size: 24pt;
+            }
+            button {
+                @include transform(translate(0,0));
+                color: $link-color;
+                font-weight: bold;
+                margin-top: 20px;
+                padding: 15px 10px;
+                background-color: $button-color;
+                border: none;
+            }
+        }
+        #intro-image {
+            img {
+                @extend %height;
+                // width: 60%;
+                float: left;
+                width: 770px;
+            }
+        }
+    }
+    footer {
+        padding: 5px 0 10px 80px;
+    }
+}
+
+

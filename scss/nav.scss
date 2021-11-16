@@ -1,5 +1,17 @@
 /* Nest Nav */
 @import 'colors';
 nav {
+    padding-left: 40px;
+    ul {
+        li {
+            display: inline-block;
+            list-style: none;
+            color: $link-color;
+            a {
+                text-decoration: none;
+                color: $link-color;
+            }
+        }
+    }
     
 }

@@ -1,5 +1,56 @@
 /* Variables */
+/* Nest Nav */
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+nav {
+  padding-left: 40px; }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    color: white; }
+    nav ul li a {
+      text-decoration: none;
+      color: white; }
+
+body main, body main #intro-image img {
+  height: 535px; }
+
 /* Nest Main */
-main {
-  width: 1350px;
-  min-height: 535px; }
+body {
+  background-color: #daaa0e;
+  font-family: Arial, Helvetica, Sans-Serif;
+  color: #313130; }
+  body main {
+    width: 1350px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border: #daaa0e solid 10px; }
+    body main #intro-text {
+      text-align: center;
+      float: left;
+      background-color: #d4d5d8;
+      width: 40%;
+      padding: 10% 20px 116px 20px;
+      font-weight: bold; }
+      body main #intro-text span {
+        font-family: "Sacramento", cursive;
+        font-size: 24pt; }
+      body main #intro-text h3 {
+        font-size: 24pt; }
+      body main #intro-text button {
+        -moz-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        color: white;
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 15px 10px;
+        background-color: #daaa0e;
+        border: none; }
+    body main #intro-image img {
+      float: left;
+      width: 770px; }
+  body footer {
+    padding: 5px 0 10px 80px; }
